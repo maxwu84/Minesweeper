@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=1380&t=st=1653894986~exp=1653895586~hmac=396dd837dcc67f2d6d7fe26b8a3741aadc61b57c3cb225bc522d8f09ca421066");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header,
+.content {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+#controlBox {
+    position: relative;
+    margin-bottom: 32px;
+    /* outline: 1px red solid; */
+}
+
+#controlBox label {
+    padding: 0px;
+    width: 50px;
+    border: black 2px solid;
+
+    text-align: center;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#controlBox>#timeTxt {
+    position: absolute;
+    left: 10px;
+}
+
+#controlBox>#mineTxt {
+    position: absolute;
+    right: 10px;
+}
+
+#resetBtn{
+    width: 150px;
+    height: 50px;
+    border-radius:15px ;
+    font-size: 1.5em;
+    background-color: violet;
+}
+/* ========== 遊戲畫面 ========== */
+#gameBoard {
+    width: 900px;
+    height: 480px;
+    /* border: 3px solid black; */
+    display: grid;
+    grid-template-columns: repeat(30, auto);
+    grid-gap: 0px 0px;
+}
+
+.cells {
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
